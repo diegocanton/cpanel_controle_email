@@ -1,4 +1,6 @@
 #!/bin/bash
+## Lista todas as contas de e-mail e deleta as contas suspensas
+
 uapi --user=<USER_CPANEL> Email list_pops | sed "s/\n//g" > list_contas
 echo "" > delete_log
 
